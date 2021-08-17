@@ -1,0 +1,199 @@
+$mainColor:#0C73EB;
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+.app{
+    
+    border: 3px solid black;
+    
+    &__header{
+        background-color: $mainColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1vh;
+        align-items: center;
+    }
+
+
+    &__main{
+        //border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+          
+
+        &__left{
+          width: 30%;
+          border-right: 2px solid gray ;
+          font-weight: bold;
+          padding: 1rem;
+
+          &__heading{
+            padding: 1rem 1rem 1rem 0rem;
+          }
+
+          &__input{
+            width: 100%;
+          
+          }
+
+          &__price{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: 400;
+          }
+
+          &__button{
+            background-color: $mainColor;
+            color: whitesmoke;
+            font-size: 1.25rem;
+            border: 1px solid $mainColor;
+            border-radius: 10px;
+            padding:2px 8px;
+            margin: 20px 0px 2px 35%;
+          }
+
+        }
+
+
+
+        &__right{
+          width: 70%;
+          
+          &__SortBy{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 2rem 30rem 2rem 1rem;
+          }
+
+          &__card{
+            border: 3px solid yellow;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            row-gap: 0.5rem;
+          
+           // overflow-y: scroll;
+            //width: 300px;
+            //height: 350px;
+
+            &__item{
+              padding: 6px;
+              background-color: #FAF9F6;
+               text-align: center;
+               span ,i ,b{
+                 margin: 0.5rem;
+               }
+               i{
+                 color: blue;
+               }
+               
+               button{
+                 background-color: #FFCC33;
+                 border: 2px solid #FFCC33;
+                 border-radius: 8px;
+                 padding: 4px;
+                 font-weight: bold;
+               }
+            }
+          }
+        }
+
+       
+    }
+
+
+
+
+
+    &__footer{
+        //border: 2px dotted blue;
+        background-color: $mainColor;
+        color: whitesmoke;
+        text-align: center;
+        padding: 2px;
+    }
+}
+
+
+
+//************Icon moon****************//@at-root
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('fonts/icomoon.ttf?x2epta') format('truetype'),
+    url('fonts/icomoon.woff?x2epta') format('woff'),
+    url('fonts/icomoon.svg?x2epta#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  //speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping-cart:before {
+  content: "\e903";
+  font-size: 1.5rem;
+  color : whitesmoke;
+  padding: 1rem;
+}
+.icon-bookmark:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\67";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-search:before {
+  content: "\e986";
+  font-size: 1.5rem;
+  color:whitesmoke;
+  padding: 1rem;
+}
+.icon-star-full:before {
+  content: "\e9d9";
+  font-size: 1.5rem;
+  color: gold;
+  padding: 1rem;
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-filter1:before {
+  content: "\ea5b";
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+.icon-filter:before {
+  content: "\e901";
+}
+.icon-shopping_cart_empty_icon:before {
+  content: "\e900";
+}

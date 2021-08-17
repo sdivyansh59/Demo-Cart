@@ -1,38 +1,218 @@
-.App {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.app {
+  border: 3px solid black;
+}
+
+.app__header {
+  background-color: #0C73EB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.app__main__left {
+  width: 30%;
+  border-right: 2px solid gray;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.app__main__left__heading {
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+.app__main__left__input {
+  width: 100%;
+}
+
+.app__main__left__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+}
+
+.app__main__left__button {
+  background-color: #0C73EB;
+  color: whitesmoke;
+  font-size: 1.25rem;
+  border: 1px solid #0C73EB;
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin: 20px 0px 2px 35%;
+}
+
+.app__main__right {
+  width: 70%;
+}
+
+.app__main__right__SortBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 30rem 2rem 1rem;
+}
+
+.app__main__right__card {
+  border: 3px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+.app__main__right__card__item {
+  padding: 6px;
+  background-color: #FAF9F6;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__main__right__card__item span, .app__main__right__card__item i, .app__main__right__card__item b {
+  margin: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__main__right__card__item i {
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__main__right__card__item button {
+  background-color: #FFCC33;
+  border: 2px solid #FFCC33;
+  border-radius: 8px;
+  padding: 4px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.app__footer {
+  background-color: #0C73EB;
+  color: whitesmoke;
+  text-align: center;
+  padding: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.ttf?x2epta") format("truetype"), url("fonts/icomoon.woff?x2epta") format("woff"), url("fonts/icomoon.svg?x2epta#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping-cart:before {
+  content: "\e903";
+  font-size: 1.5rem;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.icon-bookmark:before {
+  content: "\e902";
+}
+
+.icon-cart:before {
+  content: "\67";
+}
+
+.icon-credit-card:before {
+  content: "\e93f";
+}
+
+.icon-search:before {
+  content: "\e986";
+  font-size: 1.5rem;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+  font-size: 1.5rem;
+  color: gold;
+  padding: 1rem;
+}
+
+.icon-circle-up:before {
+  content: "\ea41";
+}
+
+.icon-circle-down:before {
+  content: "\ea43";
+}
+
+.icon-filter1:before {
+  content: "\ea5b";
+}
+
+.icon-amazon:before {
+  content: "\ea87";
+}
+
+.icon-filter:before {
+  content: "\e901";
+}
+
+.icon-shopping_cart_empty_icon:before {
+  content: "\e900";
+}
+/*# sourceMappingURL=App.css.map */
